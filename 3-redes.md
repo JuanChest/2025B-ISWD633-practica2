@@ -56,4 +56,14 @@ docker network ls
 ```
 docker network rm <nombre de la red>
 ```
+# Redes creadas:
+<img width="571" height="164" alt="image" src="https://github.com/user-attachments/assets/e38b106e-e027-4a1b-8575-a1ca0630bcda" />
+
+# net-curso01:
+<img width="1125" height="463" alt="image" src="https://github.com/user-attachments/assets/81b1c794-1df3-45b5-9b1b-48ab9394d6e3" />
+
+# net-curso02:
+<img width="1089" height="325" alt="image" src="https://github.com/user-attachments/assets/b48df758-4667-4d35-b915-9b0b0b18e02f" />
+
+
 
