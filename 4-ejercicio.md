@@ -14,7 +14,7 @@ docker run -d --name contenedormysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABA
 ### Crear el contenedor mysql a partir de la imagen mysql:8, configurar las variables de entorno necesarias
 # COMPLETAR
 ```
-docker run -d --name contenedorwordpress --network net-wp -p 8080:80 -e WORDPRESS_DB_HOST=contenedormysql:3306 -e WORDPRESS_DB_USER=juanchest -e WORDPRESS_DB_PASSWORD=holadios wordpress
+docker run -d --name contenedorwordpress --network net-wp -p 8080:80 -e WORDPRESS_DB_HOST=contenedormysql -e WORDPRESS_DB_USER=juanchest -e WORDPRESS_DB_PASSWORD=wpass -e WORDPRESS_DB_NAME=wordpress wordpress
 ```
 ### Crear el contenedor wordpress a partir de la imagen: wordpress, configurar las variables de entorno necesarias
 # COMPLETAR
