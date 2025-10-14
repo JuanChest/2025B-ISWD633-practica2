@@ -2,15 +2,24 @@
 ![Imagen](esquema-4-ejercicio.PNG)
 
 ### Crear la red
+```
+docker network create net-wp -d bridge
+```
 # COMPLETAR
+
+```
+docker run -d --name contenedormysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=wordpress -e MYSQL_USER=juanchest -e MYSQL_PASSWORD=wpass mysql:8
+```
 
 ### Crear el contenedor mysql a partir de la imagen mysql:8, configurar las variables de entorno necesarias
 # COMPLETAR
-
+```
+docker run -d --name contenedorwordpress --network net-wp -p 8080:80 -e WORDPRESS_DB_HOST=contenedormysql:3306 -e WORDPRESS_DB_USER=juanchest -e WORDPRESS_DB_PASSWORD=holadios wordpress
+```
 ### Crear el contenedor wordpress a partir de la imagen: wordpress, configurar las variables de entorno necesarias
 # COMPLETAR
 
-De acuerdo con el trabajo realizado, en el esquema del ejercicio el puerto a es **(completar con el valor)**
+De acuerdo con el trabajo realizado, en el esquema del ejercicio el puerto a es = 8989
 
 Ingresar desde el navegador al wordpress y finalizar la configuración de instalación.
 # COLOCAR UNA CAPTURA DE LA CONFIGURACIÓN
